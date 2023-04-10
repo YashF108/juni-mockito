@@ -52,7 +52,6 @@ public class BookController {
         existingBook.setRating(book.getRating());
 
         return bookRepository.save(existingBook);
-
     }
 
     @DeleteMapping(value = "{bookId}")
